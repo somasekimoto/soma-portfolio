@@ -1,21 +1,17 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import iconImage from '../images/my-icon-pic.jpg'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      {/* <span className="icon fa-diamond"></span> */}
+      <img src={iconImage} className="my-icon"></img>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
-        <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
-        </p>
+        <h1>Hi, I'm Soma Sekimoto</h1>
+        <h2>Web Developer</h2>
       </div>
     </div>
     <nav>
@@ -26,7 +22,7 @@ const Header = props => (
               props.onOpenArticle('intro')
             }}
           >
-            Intro
+            PROFILE
           </button>
         </li>
         <li>
@@ -35,10 +31,10 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            Work
+            MY WORKS
           </button>
         </li>
-        <li>
+        {/* <li>
           <button
             onClick={() => {
               props.onOpenArticle('about')
@@ -46,14 +42,14 @@ const Header = props => (
           >
             About
           </button>
-        </li>
+        </li> */}
         <li>
           <button
             onClick={() => {
               props.onOpenArticle('contact')
             }}
           >
-            Contact
+            CONTACT
           </button>
         </li>
       </ul>

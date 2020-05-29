@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import pic01 from '../images/hamilton.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
@@ -28,29 +28,28 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Profile</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
+          <h3>関本 宗真</h3>
+          <p>1997年4月21日生まれ　　兵庫県出身</p>
+          <p>2018年</p>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            オーストラリアにワーキングホリデービザを取得して1年間滞在。プログラミングと出会い、独学で勉強を始める。
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            2019年　大学を中退して、大阪に住み、カレー作りとプログラミング学習に勤しむ
+          </p>
+          <p>
+            2020年　プログラミングスクールTECH CAMP（旧 TECH
+            EXPERT）でプログラミング学習を本格化
+          </p>
+          <p>4月から、エンジニアとして就職するため、絶賛就活中</p>
+          <p>
+            スキル： HTML, CSS(Scss), JavaScript(jQuery, React.js, Gatsby),
+            Ruby, Ruby on rails, Git(Github), Docker, AWS(EC2, S3, Lambda,
+            DynamoDB, API Gateway, Amplify, Route53)
           </p>
           {close}
         </article>
@@ -62,7 +61,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">My Works</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -84,14 +83,14 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article
+        {/* <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">About Me</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
@@ -105,7 +104,7 @@ class Main extends React.Component {
             amet.
           </p>
           {close}
-        </article>
+        </article> */}
 
         <article
           id="contact"
@@ -137,31 +136,46 @@ class Main extends React.Component {
               </li>
             </ul>
           </form>
+          <p>As a Developer</p>
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
+                href="https://twitter.com/s_souma0421"
                 className="icon fa-twitter"
               >
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
+              <a
+                href="https://github.com/SomaSekimoto"
+                className="icon fa-github"
+              >
+                <span className="label">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://qiita.com/soma_sekimoto">
+                <span className="label">Qiita</span>
+              </a>
+            </li>
+          </ul>
+          <p>As a Person</p>
+          <ul className="icons">
+            <li>
+              <a
+                href="https://www.facebook.com/Soma.421/"
+                className="icon fa-facebook"
+              >
                 <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
+                href="https://www.instagram.com/soma.0421/"
+                className="icon fa-instagram"
               >
-                <span className="label">GitHub</span>
+                <span className="label">Instagram</span>
               </a>
             </li>
           </ul>
