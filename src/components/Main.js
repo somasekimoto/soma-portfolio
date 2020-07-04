@@ -80,13 +80,24 @@ class Main extends React.Component {
             <img src={golf} alt="Golf Searcher" />
           </span>
           <h3>Golf Searcher</h3>
-          <p></p>
+          <p>
+            このアプリケーションは、RakutenAPI と GoogleMapsAPI
+            を利用して、東京近郊のゴルフ場を検索し、そこまでの距離と価格を表示させるアプリです。
+            Techpit(
+            <a href="https://www.techpit.jp/">https://www.techpit.jp/</a>)
+            の教材を購入して読みながら制作しました。
+          </p>
           <hr></hr>
           <span className="image main">
             <img src={thinky} alt="Thinky" />
           </span>
           <h3>Thinky</h3>
-          <p></p>
+          <p>Think "WHY". => 「think Y」 => 「Thinky」</p>
+          <p>
+            コンセプト：「Why (なぜ)をとことん考える」
+            あらゆるものに対して「Why?」をぶつけて思考することで、考える力を養うことが目的のアプリ。
+            自分一人でじっくり考えてもよし、他のユーザーの考えから新たな視座を得て思考の幅を拡げることも可能。
+          </p>
           {close}
         </article>
 
