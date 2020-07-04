@@ -2,7 +2,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/hamilton.jpg'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import thinky from '../images/thinky.png'
+import golf from '../images/golf-searcher.png'
+// import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
   render() {
