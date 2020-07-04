@@ -2,7 +2,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/hamilton.jpg'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import thinky from '../images/thinky.png'
+import golf from '../images/golf-searcher.png'
+// import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
   render() {
@@ -63,23 +65,28 @@ class Main extends React.Component {
         >
           <h2 className="major">My Works</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img
+              src="https://i.gyazo.com/31ac599b9e0235f9bc8428fbd45626f6.jpg"
+              alt="Moyoshi"
+            />
           </span>
+          <h3>Moyoshi</h3>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            プログラミングスクールに通い、初めて自力で制作したアプリケーションです。イベントや広告の掲示ができるアプリです。
           </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <a></a>
+          <hr></hr>
+          <span className="image main">
+            <img src={golf} alt="Golf Searcher" />
+          </span>
+          <h3>Golf Searcher</h3>
+          <p></p>
+          <hr></hr>
+          <span className="image main">
+            <img src={thinky} alt="Thinky" />
+          </span>
+          <h3>Thinky</h3>
+          <p></p>
           {close}
         </article>
 
@@ -114,7 +121,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" data-netlify="true" name="soma-contact">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
